@@ -91,36 +91,6 @@ a:focus {
   background-color: #d1e3ff;
 }
 
-.header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
-}
-
-.header_section .header_top {
-  background-color: #ffffff;
-}
-
-.header_section .header_top .contact_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header_section .header_top .contact_nav a {
-  color: #000000;
-}
-
-.header_section .header_top .contact_nav a i {
-  color: #0cb631;
-}
-
-.header_section .header_bottom {
-  padding: 10px 0;
-}
-
 .navbar-brand {
   padding: 0;
   margin: 0;

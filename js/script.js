@@ -8,12 +8,12 @@ function animateCounters() {
         let count = +counter.innerText;
   
         // Incremento
-        const increment = target / 200;
+        const increment = target / 50;
   
         if (count < target) {
           count += increment;
           counter.innerText = '+' + Math.ceil(count);
-          setTimeout(updateCounter, 10);
+          setTimeout(updateCounter, 50);
         } else {
           counter.innerText = '+' + target;
         }
@@ -39,31 +39,4 @@ function animateCounters() {
       hasAnimated = true;
     }
   });
-  
-
-
-  document.addEventListener("DOMContentLoaded", function() {
-    let lastScrollTop = 0;
-    const header = document.getElementById("main-header");
-  
-    window.addEventListener("scroll", function() {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
-      if (scrollTop > 100) { // Ajuste este valor conforme necessário
-        if (scrollTop > lastScrollTop) {
-          // Rolando para baixo - mostra o header
-          header.classList.add("show");
-        } else {
-          // Rolando para cima - oculta o header
-          header.classList.remove("show");
-        }
-      } else {
-        // No topo da página - oculta o header
-        header.classList.remove("show");
-      }
-  
-      lastScrollTop = scrollTop;
-    });
-  });
-  
   
