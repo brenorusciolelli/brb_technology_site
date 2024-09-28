@@ -34,7 +34,7 @@
 <body>
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section" id="main-header">
       <div class="header_top">
         <div class="container-fluid">
           <div class="contact_nav">
@@ -42,18 +42,18 @@
                 <img src="./images/logo.png" alt="BRB Technology" id="imagem_logo" width="100" height="100">
               </span>
               
-              <ul class="navbar-nav ml-auto d-flex flex-row">
+              <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <a class="nav-link" href="about.html"> Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
+                  <a class="nav-link" href="service.html">Serviços</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                  <a class="nav-link" href="contact.html">Contato</a>
                 </li>
               </ul>
           </div>
@@ -107,30 +107,25 @@
             </svg>
           </div>
           <h5 class="name">
-            Repair
+            Manutenção
           </h5>
         </div>
         <div class="box active">
           <div class="img-box">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
-              <g id="paint-painted-paint_roller-home-house" data-name="paint-painted-paint roller-home-house">
-                <path d="M60.01,25.05a2.963,2.963,0,0,0,1.85-1.54l.21-.41a3.022,3.022,0,0,0-1.14-3.91L58,17.43V7.82A3,3,0,0,0,57,2H49a3.009,3.009,0,0,0-3,3,2.979,2.979,0,0,0,1.99,2.81v3.62L33.54,2.76a2.988,2.988,0,0,0-3.08,0L3.07,19.19A3.022,3.022,0,0,0,1.93,23.1l.21.41a2.963,2.963,0,0,0,1.85,1.54,2.923,2.923,0,0,0,.83.12A3.033,3.033,0,0,0,6,24.9V56H5a3,3,0,0,0,0,6H59a3,3,0,0,0,0-6H58V24.91A2.9,2.9,0,0,0,60.01,25.05ZM49,4h8a1,1,0,0,1,0,2H49a1,1,0,0,1,0-2Zm7,4v8.23l-6.01-3.6V8ZM40,60H5a1,1,0,0,1,0-2H40Zm6,0H42V50h4Zm1-12H45V42.03a1.028,1.028,0,0,1,.42-.82l5.32-3.8A2.991,2.991,0,0,0,52,34.97V32a3.009,3.009,0,0,0-3-3H48V28a1,1,0,0,0-1-1H44a3.009,3.009,0,0,0-3-3H19a3.009,3.009,0,0,0-3,3H13a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h3a3.009,3.009,0,0,0,3,3h1v8a4,4,0,0,0,8,0V36h2a4,4,0,0,0,8,0h3a3.009,3.009,0,0,0,3-3h3a1,1,0,0,0,1-1V31h1a1,1,0,0,1,1,1v2.97a1.028,1.028,0,0,1-.42.82l-5.32,3.8A2.991,2.991,0,0,0,43,42.03V48H41a1,1,0,0,0-1,1v7H8V23.76L31.48,9.62a1.02,1.02,0,0,1,1.04,0L56,23.76V56H48V49A1,1,0,0,0,47,48ZM46,29v2H44V29Zm-4-2v6a1,1,0,0,1-1,1H38V26h3A1,1,0,0,1,42,27ZM29,30a3.009,3.009,0,0,0-3,3V44a2,2,0,0,1-4,0V26H36V36a2,2,0,0,1-4,0V33A3.009,3.009,0,0,0,29,30Zm1,3v1H28V33a1,1,0,0,1,2,0ZM20,26v8H19a1,1,0,0,1-1-1V27a1,1,0,0,1,1-1Zm-4,3v2H14V29ZM59,58a1,1,0,0,1,0,2H48V58ZM33.55,7.91a2.979,2.979,0,0,0-3.1,0L5.34,23.03a1.018,1.018,0,0,1-.8.1.972.972,0,0,1-.61-.51l-.21-.41A1.021,1.021,0,0,1,4.1,20.9L31.49,4.47a1,1,0,0,1,1.02,0L59.9,20.9a1.021,1.021,0,0,1,.38,1.31l-.21.41a.972.972,0,0,1-.61.51,1.018,1.018,0,0,1-.8-.1Z" />
-              </g>
-            </svg>
+            <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M462.17,330.21c17.39-57,16.48-123.11-6.21-177.89C423.93,75,356.42,32.37,265.89,32.37,202,32.37,153.33,51,121.4,87.8c-48.65,56-42,134.52-40.43,147.89l-41.18,100A24.37,24.37,0,0,0,38,348.11a23.57,23.57,0,0,0,17.91,19.95l34.2,8.14,19.09,57.94a33,33,0,0,0,39.67,21.5L230.64,434v38.48c0,3.42,2.33,6.66,5.72,7.13a6.69,6.69,0,0,0,7.65-6.62V425.25a6.72,6.72,0,0,0-2.61-5.3,6.59,6.59,0,0,0-5.79-1.16l-90.19,23.92A19.5,19.5,0,0,1,121.87,430l-20.26-61.49a6.69,6.69,0,0,0-4.79-4.42l-37.83-9a10.18,10.18,0,0,1-7.06-13.76L93.32,240.83c6.42-4.8,38.8-27.07,80.46-22.84,33.08,3.33,64,22.41,91.89,56.69a226.35,226.35,0,0,0,22.7,24.09,6.76,6.76,0,0,0,.62.57C329,335.7,370.74,345,402.81,345A165.88,165.88,0,0,0,445,339.6c-10.07,27.21-24.68,51.65-43.53,70.52a6.73,6.73,0,0,0-2,4.76v57.55c0,3.42,2.33,6.66,5.73,7.13a6.69,6.69,0,0,0,7.65-6.62V417.62c21.9-22.64,38.26-52.4,48.59-85.24A6.42,6.42,0,0,0,462.17,330.21ZM311.79,301h68.39a27,27,0,1,0,0-13.38H295.94A217.54,217.54,0,0,1,276,266.24a215.51,215.51,0,0,0-26.68-27.52H371a27,27,0,1,0,0-13.38H354V191.72a27,27,0,1,0-13.37,0v33.62h-109c-16.05-10.43-32.87-17-50.34-19.68V179.28h44.09a27,27,0,1,0,0-13.37H181.25V106.57h70.84a27,27,0,1,0,0-13.38H174.56a6.68,6.68,0,0,0-6.69,6.69V204.25c-33.66-1.33-60.56,11.75-74.3,20.27-1.21-24.48.22-84.59,38-128C160.85,62.82,206,45.75,265.89,45.75c84.77,0,147.88,39.66,177.71,111.69,21.3,51.4,22.39,113.22,6.53,166.75C436.08,329.37,374.25,347.85,311.79,301Zm80.83-6.69A13.65,13.65,0,1,1,406.27,308,13.66,13.66,0,0,1,392.62,294.32Zm-45.31-115A13.64,13.64,0,1,1,361,165.64,13.66,13.66,0,0,1,347.31,179.28ZM383.42,232a13.65,13.65,0,1,1,13.64,13.64A13.66,13.66,0,0,1,383.42,232ZM237.78,172.6a13.65,13.65,0,1,1,13.64,13.65A13.65,13.65,0,0,1,237.78,172.6Zm26.75-72.72a13.65,13.65,0,1,1,13.64,13.64A13.66,13.66,0,0,1,264.53,99.88Z"/></svg>
           </div>
           <h5 class="name">
-            Improve
+            Criação
           </h5>
         </div>
         <div class="box">
           <div class="img-box">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
-              <path d="M62.707,31.293l-30-30a1,1,0,0,0-1.414,0l-30,30A1,1,0,0,0,2,33H7V57H6a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1H58a1,1,0,0,0,1-1V58a1,1,0,0,0-1-1H57V33h5a1,1,0,0,0,.707-1.707ZM57,61H7V59H57ZM9,57V32.414l23-23,23,23V57ZM56.414,31,32.707,7.293a1,1,0,0,0-1.414,0L7.586,31H4.414L32,3.414,59.586,31Z" />
-              <path d="M41,39H36V36a1,1,0,0,0-1-1H29a1,1,0,0,0-1,1v3H23a3,3,0,0,0-3,3v4a1,1,0,0,0,1,1h1v7a1,1,0,0,0,1,1H41a1,1,0,0,0,1-1V47h1a1,1,0,0,0,1-1V42A3,3,0,0,0,41,39ZM30,37h4v2H30ZM40,53H24V47h5v3a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V47h5Zm-9-6h2v2H31Zm11-2H22V42a1,1,0,0,1,1-1H41a1,1,0,0,1,1,1Z" />
-              <path d="M46,31H42.422a1,1,0,0,1,0-2H46a1,1,0,0,0,.916-1.4A5.992,5.992,0,0,0,36.231,27h-8.04a5.992,5.992,0,0,0-10.685.6,1,1,0,0,0,.916,1.4H22a1,1,0,0,1,0,2H18.422a1,1,0,0,0-.916,1.4,5.992,5.992,0,0,0,10.685.6h8.04a5.992,5.992,0,0,0,10.685-.6A1,1,0,0,0,46,31Zm-4.578,3a4,4,0,0,1-3.662-2.4,1,1,0,0,0-.916-.6H27.578a1,1,0,0,0-.916.6,3.991,3.991,0,0,1-6.3,1.4H22a3,3,0,0,0,0-6H20.359a3.991,3.991,0,0,1,6.3,1.4,1,1,0,0,0,.916.6h9.266a1,1,0,0,0,.916-.6,3.991,3.991,0,0,1,6.3-1.4h-1.64a3,3,0,0,0,0,6h1.64A3.988,3.988,0,0,1,41.422,34Z" /></svg>
-          </div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve"><style type="text/css">
+              .st0{fill:#2B79C2;}
+              .st1{fill:#3B4652;}
+            </style><g><path class="st1" d="M216.4,418.4c0,21.9,17.7,39.6,39.6,39.6s39.6-17.7,39.6-39.6v-2.5h-79.2V418.4z"/><path class="st1" d="M365.4,163.4c0-30.2-12.3-57.6-32-77.4c-19.8-19.8-47.2-32-77.4-32c-60.4,0-109.4,49-109.4,109.4v9.3h218.8   V163.4z M219,152.5c-11.2,0-20.2-9-20.2-20.2c0-11.2,9-20.2,20.2-20.2s20.2,9,20.2,20.2C239.2,143.5,230.1,152.5,219,152.5z    M293,152.5c-11.2,0-20.2-9-20.2-20.2c0-11.2,9-20.2,20.2-20.2s20.2,9,20.2,20.2C313.3,143.5,304.2,152.5,293,152.5z"/><path class="st0" d="M146.6,339.8c0,34.3,27.8,62.1,62.1,62.1h94.6c34.3,0,62.1-27.8,62.1-62.1v-153H146.6V339.8z M214.8,242.4   h82.5v60.7c0,22.8-18.5,41.2-41.2,41.2s-41.2-18.5-41.2-41.2V242.4z"/><path class="st1" d="M107,239.1v19.4l0,0c-22.2,0-40.3-18.1-40.3-40.3v-43c12-2.9,21.2-13.2,22.5-25.7l15.4-15.4   c1.3-1.3,2.1-3.1,2.1-4.9v-26.7c0-3.9-3.1-7-7-7s-7,3.1-7,7v23.8l-6.6,6.6c-4.9-9.5-14.9-16-26.3-16c-11.4,0-21.4,6.5-26.3,16   l-6.6-6.6v-23.8c0-3.9-3.1-7-7-7s-7,3.1-7,7v26.7c0,1.9,0.7,3.6,2,4.9l15.4,15.4c1.3,12.6,10.5,22.8,22.5,25.7v43   c0,29.9,24.4,54.3,54.3,54.3l0,0v24.2c0,8.7,7,15.8,15.8,15.8h9.8v-89.1h-9.8C114,223.4,107,230.4,107,239.1z"/><path class="st1" d="M492.3,95.5c-3.9,0-7,3.1-7,7v23.8l-6.6,6.6c-4.9-9.5-14.9-16-26.3-16c-11.4,0-21.4,6.5-26.3,16l-6.6-6.6   v-23.8c0-3.9-3.1-7-7-7s-7,3.1-7,7v26.7c0,1.9,0.7,3.6,2.1,4.9l15.4,15.4c1.3,12.6,10.5,22.8,22.5,25.7v43   c0,22.2-18.1,40.3-40.3,40.3l0,0v-19.4c0-8.7-7-15.8-15.8-15.8h-9.8v89.1h9.8c8.7,0,15.8-7.1,15.8-15.8v-24.2l0,0   c29.9,0,54.3-24.4,54.3-54.3v-43c12-2.9,21.2-13.2,22.5-25.7l15.4-15.4c1.3-1.3,2-3.1,2-4.9v-26.7   C499.3,98.6,496.1,95.5,492.3,95.5z"/></g></svg></div>
           <h5 class="name">
-            Maintain
+            Desenvolvimento
           </h5>
         </div>
       </div>
@@ -141,30 +136,31 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-6">
-          <div class="detail-box">
-            <h2>
-              About us
-            </h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-7 col-md-6">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
-          </div>
-        </div>
+<!-- Seção de Estatísticas -->
+<section id="estatisticas" class="py-5 bg-light full-screen">
+  <div class="container">
+    <h2 class="text-center mb-4">Nossas Conquistas</h2>
+    <div class="row text-center">
+      <div class="col-md-3 col-sm-6">
+        <h3 class="counter" data-count="5">+0</h3>
+        <p>Clientes Atendidos</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h3 class="counter" data-count="15">+0</h3>
+        <p>Projetos Entregues</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h3 class="counter" data-count="5">+0</h3>
+        <p>Anos de Experiência</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h3 class="counter" data-count="20">+0</h3>
+        <p>Soluções Implementadas</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- end about section -->
 
@@ -524,6 +520,7 @@
   </footer>
   <!-- footer section -->
 
+  <script src="js/script.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">

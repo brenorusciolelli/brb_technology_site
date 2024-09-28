@@ -849,5 +849,48 @@ a:focus {
   color: inherit;
 }
 
-/* end footer section*/
-/*# sourceMappingURL=style.css.map */
+.counter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+#estatisticas p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#estatisticas {
+  background-color: #f8f9fa;
+}
+
+.full-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header oculto inicialmente */
+#main-header {
+  position: fixed;
+  top: -100px; /* Ajuste este valor para corresponder à altura do seu header */
+  width: 100%;
+  background-color: #f8f9fa; /* Ajuste conforme necessário */
+  z-index: 1000;
+  transition: top 0.3s ease-in-out; /* Animação suave ao mostrar/ocultar */
+}
+
+/* Classe para mostrar o header */
+#main-header.show {
+  top: 0;
+}
+
+/* Ajuste do conteúdo para não ficar escondido atrás do header */
+body {
+  margin: 0;
+  padding: 0;
+}
+
