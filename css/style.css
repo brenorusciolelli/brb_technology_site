@@ -930,4 +930,16 @@ body {
   background-color: #ff8a1d;
 }
 
+.heading_container{
+  display: flex;
+  align-items: center;
+}
+
+/* Media Query Mobile*/
+
+@media (max-width: 576px) {
+  .text-titulo{
+      text-align: center;
+  }
+}
 
