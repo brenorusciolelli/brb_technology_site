@@ -644,7 +644,7 @@ a:focus {
   padding-left: 25px;
   background-color: #ffffff;
   outline: none;
-  color: #ffffff;
+  color: #737272;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
@@ -843,6 +843,15 @@ a:focus {
   padding: 20px;
 }
 
+.media-screen {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 /* Header oculto inicialmente */
 #main-header {
   position: fixed;
@@ -863,4 +872,62 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.map_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+/* Estilos para os itens do carrossel */
+.client-item {
+  border: 1px solid #ccc;        /* Borda cinza clara */
+  border-radius: 5px;            /* Arredondamento dos cantos */
+  padding: 15px;                 /* Espaçamento interno */
+  background-color: #fff;        /* Fundo branco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s;    /* Animação ao passar o mouse */
+}
+
+.client-item:hover {
+  transform: translateY(-5px);   /* Efeito de levantar ao passar o mouse */
+}
+
+.carousel-item .row .col-12,
+.carousel-item .row .col-md-2 {
+  padding: 10px;                  /* Espaçamento entre os itens */
+}
+
+.client_section img {
+  max-height: 100px;              /* Ajuste conforme necessário */
+  object-fit: contain;            /* Mantém a proporção da imagem */
+}
+
+.client_section h5 {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Ajustar espaçamento para evitar que o carrossel fique muito cheio */
+.carousel-inner {
+  padding: 15px 0;
+}
+
+/* Centralizar os itens verticalmente */
+.carousel-item .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-prev {
+  background-color: #ff8a1d;
+}
+
+.carousel-control-next {
+  background-color: #ff8a1d;
+}
+
 
