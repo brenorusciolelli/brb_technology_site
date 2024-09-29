@@ -36,6 +36,10 @@
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
 
+    <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
     <!-- Fonte Roboto-->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
@@ -50,7 +54,7 @@
       <section class="slider_section bg-dark">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="zoom-in">
               <div class="detail-box">
                 <h1>Criando sistemas, impulsionando resultados.</h1>
                 <p>
@@ -182,19 +186,19 @@
       <div class="container">
         <h1 class="text-center mb-5">Nossas Conquistas</h1>
         <div class="row text-center">
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6" data-aos="zoom-in">
             <h3 class="counter" data-count="5">+0</h3>
             <p>Clientes Atendidos</p>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6" data-aos="zoom-in">
             <h3 class="counter" data-count="15">+0</h3>
             <p>Projetos Entregues</p>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6" data-aos="zoom-in">
             <h3 class="counter" data-count="5">+0</h3>
             <p>Anos de Experiência</p>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6" data-aos="zoom-in">
             <h3 class="counter" data-count="20">+0</h3>
             <p>Soluções Implementadas</p>
           </div>
@@ -212,7 +216,7 @@
           <h2>Nossos serviços</h2>
         </div>
         <div class="row">
-          <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="col-sm-6 col-md-4 mx-auto" data-aos="flip-left">
             <div class="box">
               <div class="img-box">
                 <img src="images/s1.png" alt="" />
@@ -224,13 +228,12 @@
                   solução tecnológica está na sua capacidade de se manter
                   eficiente e relevante ao longo do tempo. Por isso, temos um
                   dedicado Time de Sustentação focado em garantir que suas
-                  operações funcionem perfeitamente, mesmo após a implementação
-                  inicial.
+                  operações funcionem perfeitamente.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="col-sm-6 col-md-4 mx-auto" data-aos="flip-left">
             <div class="box">
               <div class="img-box">
                 <img src="images/desenvolvimento.png" alt="" />
@@ -247,7 +250,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="col-sm-6 col-md-4 mx-auto" data-aos="flip-left">
             <div class="box">
               <div class="img-box">
                 <img src="images/suporte.png" alt="" />
@@ -466,6 +469,16 @@
     <script src="js/custom.js"></script>
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-    <!-- End Google Map -->
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>
+    
   </body>
 </html>
