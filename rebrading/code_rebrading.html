@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb869",
+                        "on-tertiary-container": "#3f2300",
+                        "tertiary": "#ffb869",
+                        "on-primary": "#002e68",
+                        "primary": "#adc7ff",
+                        "primary-fixed-dim": "#adc7ff",
+                        "secondary-container": "#00f1fe",
+                        "on-error": "#690005",
+                        "outline-variant": "#414754",
+                        "surface-container-lowest": "#0a0e14",
+                        "tertiary-fixed": "#ffdcbb",
+                        "background": "#10141a",
+                        "surface-tint": "#adc7ff",
+                        "on-primary-container": "#00285b",
+                        "surface-container-high": "#262a31",
+                        "secondary-fixed-dim": "#00dbe7",
+                        "inverse-on-surface": "#2d3137",
+                        "surface-container": "#1c2026",
+                        "outline": "#8b90a0",
+                        "on-secondary": "#00363a",
+                        "on-tertiary-fixed-variant": "#683d00",
+                        "on-surface": "#dfe2eb",
+                        "on-secondary-fixed": "#002022",
+                        "surface-container-highest": "#31353c",
+                        "on-secondary-container": "#006a70",
+                        "on-primary-fixed": "#001a41",
+                        "surface-bright": "#353940",
+                        "surface-variant": "#31353c",
+                        "primary-container": "#4a8eff",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "tertiary-container": "#ce7e05",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-low": "#181c22",
+                        "on-primary-fixed-variant": "#004493",
+                        "inverse-surface": "#dfe2eb",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#c1c6d7",
+                        "on-background": "#dfe2eb",
+                        "secondary": "#ddfcff",
+                        "primary-fixed": "#d8e2ff",
+                        "surface": "#10141a",
+                        "error-container": "#93000a",
+                        "surface-dim": "#10141a",
+                        "secondary-fixed": "#74f5ff",
+                        "on-tertiary": "#482900",
+                        "on-tertiary-fixed": "#2c1700",
+                        "inverse-primary": "#005bc0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #10141a; color: #dfe2eb; }
+        .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .glass-card {
+            background: rgba(49, 53, 60, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .neon-glow-cyan {
+            box-shadow: 0 0 20px rgba(0, 241, 254, 0.2);
+        }
+        .tonal-transition-bg {
+            background: linear-gradient(to bottom, rgba(24, 28, 34, 0.6), rgba(16, 20, 26, 0.8));
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#181c22]/60 backdrop-blur-[24px] tonal-transition-bg shadow-[0_32px_64px_rgba(16,20,26,0.5)]">
+<div class="flex justify-between items-center px-12 py-4 max-w-[1440px] mx-auto">
+<div class="text-2xl font-bold tracking-[-0.02em] text-white font-['Space_Grotesk']">
+                BRB Technology
+            </div>
+<div class="hidden md:flex items-center space-x-10 font-['Space_Grotesk'] font-medium tracking-tight">
+<a class="text-slate-400 font-medium hover:text-white transition-all duration-300 ease-in-out" href="#conquests">Conquests</a>
+<a class="text-slate-400 font-medium hover:text-white transition-all duration-300 ease-in-out" href="#services">Services</a>
+<a class="text-slate-400 font-medium hover:text-white transition-all duration-300 ease-in-out" href="#clients">Clients</a>
+<a class="text-slate-400 font-medium hover:text-white transition-all duration-300 ease-in-out" href="#contact">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-container px-8 py-3 rounded-full font-headline font-bold text-sm tracking-tight active:scale-95 transition-transform duration-150 shadow-lg hover:shadow-primary/20">
+                Get Started
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover object-right opacity-60" data-alt="Futuristic 3D neural network structure with glowing cyan connections and floating glass prisms in deep space dark environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDJ2RNVhKG3bpcN2DrD0Mqh9b6jGJuVYXDss6EHPGMBQ8PE4qN4bDbfdTL0wytH2---MH-U3QsYIDt3GIqj7CwFwX_iSp5onvjE91TkatfObmFNTG9MmS9ztPeYpZCqJNFXG0GQNxk49tJVvZX11Y-zhA1psRSCymravaRMY-DviJemV7ticUemwJW4vum5l44yhY7h3fXQQ6gNVRRMdmzYsrbqpnhAPUZVHH6CkZSkryTcgTYipteLmuTPo4PHTGdIekhblGRHzup"/>
+</div>
+<div class="relative z-20 max-w-[1440px] mx-auto px-12 w-full">
+<div class="max-w-3xl">
+<div class="inline-flex items-center px-4 py-1.5 rounded-full bg-surface-container-highest border border-outline-variant/20 mb-8">
+<span class="w-2 h-2 rounded-full bg-secondary-container mr-3 neon-glow-cyan"></span>
+<span class="font-headline text-xs font-bold tracking-widest text-primary uppercase">Innovating for the future</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-[-0.03em] leading-[0.95] text-white mb-8">
+                        Criando sistemas, <br/><span class="text-primary">impulsionando resultados.</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-xl mb-12 leading-relaxed">
+                        Transformamos desafios tecnológicos em arquiteturas de alta performance. Onde a IA encontra a inteligência estratégica para o seu negócio.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="px-10 py-5 rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-headline font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl shadow-primary/10">
+                            Fale Conosco
+                        </button>
+<button class="px-10 py-5 rounded-full bg-transparent border border-outline-variant/30 text-white font-headline font-bold text-lg hover:bg-surface-container-highest transition-all duration-300">
+                            Saiba Mais
+                        </button>
+</div>
+</div>
+</div>
+<!-- Neural Trace Decoration -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-primary/50 to-transparent"></div>
+</section>
+<!-- Conquests Section -->
+<section class="bg-surface-container-low py-32 px-12" id="conquests">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16">
+<div class="flex flex-col items-center text-center">
+<span class="font-headline text-5xl md:text-7xl font-bold text-secondary-container mb-2">+5</span>
+<span class="font-headline text-xs uppercase tracking-[0.2em] text-outline font-bold">Clientes</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-headline text-5xl md:text-7xl font-bold text-secondary-container mb-2">+15</span>
+<span class="font-headline text-xs uppercase tracking-[0.2em] text-outline font-bold">Projetos</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-headline text-5xl md:text-7xl font-bold text-secondary-container mb-2">+5</span>
+<span class="font-headline text-xs uppercase tracking-[0.2em] text-outline font-bold">Anos</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-headline text-5xl md:text-7xl font-bold text-secondary-container mb-2">+20</span>
+<span class="font-headline text-xs uppercase tracking-[0.2em] text-outline font-bold">Soluções</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 px-12 relative overflow-hidden" id="services">
+<div class="max-w-[1440px] mx-auto relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tight text-white mb-6">Our Services</h2>
+<p class="font-body text-on-surface-variant text-lg">Soluções modulares desenhadas para escalabilidade e resiliência no cenário digital contemporâneo.</p>
+</div>
+<div class="h-px flex-grow bg-outline-variant/20 mx-12 hidden md:block mb-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Maintenance -->
+<div class="glass-card p-10 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-high group">
+<div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">settings</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-white mb-4">Maintenance</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Garantia de uptime e otimização contínua de sistemas críticos legados e modernos.</p>
+</div>
+<!-- Creation -->
+<div class="glass-card p-10 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-high group">
+<div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">design_services</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-white mb-4">Creation</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Concepção de produtos digitais com foco em UX editorial e performance técnica superior.</p>
+</div>
+<!-- Development -->
+<div class="glass-card p-10 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-high group">
+<div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">code</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-white mb-4">Development</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Engenharia de software robusta, utilizando as stacks mais avançadas do ecossistema AI.</p>
+</div>
+<!-- Support -->
+<div class="glass-card p-10 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-high group">
+<div class="w-14 h-14 rounded-lg bg-primary-container/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">support_agent</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-white mb-4">Support</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Atendimento especializado 24/7 para resolução proativa e consultoria técnica.</p>
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 blur-[120px] rounded-full -translate-x-1/2"></div>
+</section>
+<!-- Clients Section -->
+<section class="py-32 px-12 bg-surface-container-low/50" id="clients">
+<div class="max-w-[1440px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-xs uppercase tracking-[0.4em] text-outline font-bold mb-4">Trusted by Industry Leaders</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-12 items-center opacity-40 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0">
+<img class="h-12 object-contain mx-auto" data-alt="Minimalist technology company logo in white on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVmkbCw37uXwzo39co77F0Lc-3-0_j4jhPERXpMEN6knOUpZIza3gQW8E9QgeUlD6PAMzmLUVCkxDUyc8sgnTkQ9POJLRRDBbPCydHg71ORi9qJOW6bu9gfINHvYER_5RjwhfZzhLOfTjcyEj8_ZWzPOILDGK0v1VoIMYl6W5zKBZGLjSjBOAxm3IDZ5GIr4GI-ZgjW01gQjvfInerI803u4EJztbnGciy3YujzTj_M2220K9FfYRUZlRQVeTywWGqbsatZ8haqoCw"/>
+<img class="h-12 object-contain mx-auto" data-alt="Corporate abstract logo design for tech firm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6VvWH8nvGq4TVBUB3V26rMoxkzAmeF2gCFZyK6QE4C5zkRp3tiLyvf-pZBBlEllYtYSy8IaAyNqCdgFIwi0LeIxHKU9oRUzVqX-oyGEVddo0_itvtdn5iJTbM6STph9Mdk-7BE5eFR8dMg-YrzTj2n0KM1flStuqO6wn_qFc7XsfpNJ-NeZEscUwARay7MbWCdAq7_IJKEDkWc-H12tx6FJOXXe8MMzx-cOtjhMO43xdzpOAxPEJrNK4i7OufXJc0_9Fo1ZC7UIp0"/>
+<img class="h-12 object-contain mx-auto" data-alt="Modern geometric vector logo for AI startup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3px8Q1bUXEPl2OPmeXgODqiNhSI4kJxdw3Dsisu5smZib8JgjRrcj8vt-IsZbQjtU45OhDdnBAS0156_g0FsbMkvDkibKaRsasgTtCHCts4E0DrxEyocjQZ1v-qEfcUoBARJy-jzxcwZpXXVtm47kdmwGspjfBYdjYBzlOe8cezWyL2bPaO9hQwIOJRxAcvFNQJiY10KHzXmexjybi_r3cE-64akZM6ac3QcJLAhaI1er26VWcTbdhCrjWvjgO9dSRgYOKLCr7JPi"/>
+<img class="h-12 object-contain mx-auto" data-alt="Sleek sans-serif typography logo for global brand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjR5kI4Gc3xzyK4K_9xPVRO9P1O3U1lsev0xW0q5gIr1aKjOIn95J9Kfi3y1KbV3flJLSUzepUxAl-nDTxj-togZyTaRathtJrr21OqtCE2q2xKOwpPpmkXlf_FocC-Bn3zucpugfwAHxosnL5l-2oBu7rk0MjhXia3Cf2YmZtvTbjvSuszATFxN_In_LxlZ-BV9ABmHAA5icrAbjRP5R9WBG36kuYADlUXp8n8-E6DVRDuCwmkNXVzly8YOlBGxldl2gNOIA5Bi_8"/>
+<img class="h-12 object-contain mx-auto" data-alt="Minimalist emblem for software engineering company" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjchJpdQ_gSUyYZTV_DHpypt421AOJFRLZoSedaxFzIAxPx1rrNErGV6v9LlOt0bUNfcdgcSBmfZpoftCLBDnJLMGasmOxZwhCIZm7mhcO-J9LDCXMkBsIUOj2iLg0Mm3rDBZ6QoGg3H9hjlfikaetuCse4jNf8tvL-_g8K5QC6VvZBGovJXAJzFPC_uVPgO-bR61XeXSjl_N4Mmb5YQ5MOWOZd5d8cfR9tKPQ14n-M2QVH5EKVi8qsGGRgQX928XwpqToaKg4Db3I"/>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-12" id="contact">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+<div>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-white mb-8">Vamos construir algo <span class="text-secondary-container">extraordinário.</span></h2>
+<p class="font-body text-xl text-on-surface-variant mb-12">Pronto para elevar o patamar tecnológico do seu negócio? Entre em contato e agende uma consultoria estratégica.</p>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="font-headline text-xs text-outline uppercase tracking-widest mb-1">Email</p>
+<p class="font-body text-white font-medium">contact@brbtechnology.com</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<p class="font-headline text-xs text-outline uppercase tracking-widest mb-1">Office</p>
+<p class="font-body text-white font-medium">Global Digital Services HQ</p>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-12 rounded-2xl border border-outline-variant/10 shadow-2xl">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative group">
+<label class="font-headline text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Seu Nome</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-0 text-white p-4 transition-all duration-300" placeholder="John Doe" type="text"/>
+<div class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary-container transition-all duration-500 group-focus-within:w-full neon-glow-cyan"></div>
+</div>
+<div class="relative group">
+<label class="font-headline text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Seu Email</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-0 text-white p-4 transition-all duration-300" placeholder="john@company.com" type="email"/>
+<div class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary-container transition-all duration-500 group-focus-within:w-full neon-glow-cyan"></div>
+</div>
+</div>
+<div class="relative group">
+<label class="font-headline text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Sua Mensagem</label>
+<textarea class="w-full bg-surface-container-lowest border-none focus:ring-0 text-white p-4 transition-all duration-300" placeholder="Como podemos ajudar?" rows="4"></textarea>
+<div class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary-container transition-all duration-500 group-focus-within:w-full neon-glow-cyan"></div>
+</div>
+<button class="w-full py-5 rounded-full bg-primary text-on-primary font-headline font-bold text-lg hover:bg-primary-fixed transition-all duration-300 active:scale-95">
+                                Enviar Mensagem
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#10141a] w-full py-16 px-12 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-[1440px] mx-auto">
+<div class="md:col-span-1">
+<div class="text-lg font-bold font-['Space_Grotesk'] text-white mb-6">BRB Technology</div>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-500">Pioneering technical excellence through modular AI structures and high-performance software engineering.</p>
+</div>
+<div class="md:col-span-1 space-y-4">
+<h4 class="font-headline text-xs font-bold text-primary uppercase tracking-[0.2em] mb-6">Explore</h4>
+<div class="flex flex-col space-y-3">
+<a class="text-slate-500 hover:text-[#adc7ff] font-['Inter'] text-sm hover:translate-x-1 transition-transform duration-200" href="#">Projects</a>
+<a class="text-slate-500 hover:text-[#adc7ff] font-['Inter'] text-sm hover:translate-x-1 transition-transform duration-200" href="#">Tech Stack</a>
+<a class="text-slate-500 hover:text-[#adc7ff] font-['Inter'] text-sm hover:translate-x-1 transition-transform duration-200" href="#">Careers</a>
+</div>
+</div>
+<div class="md:col-span-1 space-y-4">
+<h4 class="font-headline text-xs font-bold text-primary uppercase tracking-[0.2em] mb-6">Connect</h4>
+<div class="flex flex-col space-y-3">
+<a class="text-slate-500 hover:text-[#adc7ff] font-['Inter'] text-sm hover:translate-x-1 transition-transform duration-200" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-[#adc7ff] font-['Inter'] text-sm hover:translate-x-1 transition-transform duration-200" href="#">Twitter</a>
+<a class="text-slate-500 hover:text-[#adc7ff] font-['Inter'] text-sm hover:translate-x-1 transition-transform duration-200" href="#">GitHub</a>
+</div>
+</div>
+<div class="md:col-span-1 space-y-4">
+<h4 class="font-headline text-xs font-bold text-primary uppercase tracking-[0.2em] mb-6">Legal</h4>
+<div class="flex flex-col space-y-3">
+<a class="text-slate-500 hover:text-[#adc7ff] font-['Inter'] text-sm hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#adc7ff] font-['Inter'] text-sm hover:translate-x-1 transition-transform duration-200" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-[#adc7ff] font-['Inter'] text-sm hover:translate-x-1 transition-transform duration-200" href="#">AI Ethics</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-['Inter'] text-sm text-slate-500">© 2024 BRB Technology. All rights reserved.</p>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-secondary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-xs text-white">lan</span>
+</div>
+<span class="text-slate-500 text-xs">Based in BR | Serving Global</span>
+</div>
+</div>
+</footer>
+</body></html>
